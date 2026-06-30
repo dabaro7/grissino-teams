@@ -5,6 +5,10 @@
 # Source spreadsheet (kept locally as backup, not versioned)
 *.xlsx
 
+# Generated HTML (rebuilt by CI from organigrama.yaml)
+index.html
+organigrama.html
+
 # macOS
 .DS_Store
 

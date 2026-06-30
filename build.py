@@ -12,7 +12,7 @@ import yaml
 
 ROOT = Path(__file__).parent
 YAML_PATH = ROOT / 'organigrama.yaml'
-HTML_PATH = ROOT / 'organigrama.html'
+HTML_PATH = ROOT / 'index.html'
 
 ROLE_LABELS = [('tl', 'Team Lead'), ('pm', 'PM'), ('ux', 'UX'), ('po', 'PO'), ('qa', 'QA')]
 

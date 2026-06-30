@@ -4,20 +4,29 @@ Repo to keep track of grissino teams and members of each team.
 
 Engineering org chart — generated as a self-contained HTML page from a YAML source of truth.
 
+**Live site:** https://dabaro7.github.io/grissino-teams/
+
 ## Files
 
 - **`organigrama.yaml`** — source of truth. Domain → Area → Microteam hierarchy. Edit this.
-- **`build.py`** — generator. Reads the YAML, emits `organigrama.html`.
-- **`organigrama.html`** — generated output. Self-contained (inline CSS + JS), no external dependencies.
+- **`build.py`** — generator. Reads the YAML, emits `index.html`.
+- **`.github/workflows/deploy.yml`** — CI: rebuilds and deploys to GitHub Pages on every push to `main`.
 
-The original `organigrama.xlsx` is kept locally as backup but is not versioned (see `.gitignore`).
+The generated `index.html` is **not committed** — it's built by CI from the YAML on every push. The original `organigrama.xlsx` is also not versioned (kept locally as backup).
 
-## Usage
+## Editing the org chart
+
+1. Edit `organigrama.yaml`.
+2. Commit and push to `main`.
+3. GitHub Actions runs `build.py`, regenerates `index.html`, and deploys to Pages.
+4. Live site updates in about a minute.
+
+## Local preview
 
 ```bash
 pip3 install pyyaml
 python3 build.py
-open organigrama.html
+open index.html
 ```
 
 ## YAML schema
