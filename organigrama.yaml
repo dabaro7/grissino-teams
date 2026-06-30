@@ -467,7 +467,7 @@ domains:
       - name: Datanauts Team
         microteams:
           - name: Platform Reliability
-            tl: Stefano Straus
+            tl: Rafael Perez
             po: Adrian
             members:
               - Ivan Perea Fuentes
