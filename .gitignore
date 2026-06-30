@@ -1,0 +1,25 @@
+# Excel lock files
+~$*.xlsx
+~$*.xls
+
+# Source spreadsheet (kept locally as backup, not versioned)
+*.xlsx
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+
+# Claude Code / Wiz session config
+.claude/

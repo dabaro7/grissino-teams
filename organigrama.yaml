@@ -1,0 +1,510 @@
+# Engineering Org Chart - Source of Truth
+#
+# Structure:
+#   domains:
+#     - name: <Domain>
+#       areas:
+#         - name: <Area>
+#           microteams:
+#             - name: <Microteam>
+#               tl: <Team Lead>           # optional
+#               pm: <Product Manager>     # optional
+#               ux: <UX Designer>         # optional
+#               po: <Product Owner>       # optional
+#               qa: <QA / Other>          # optional
+#               members:                  # optional
+#                 - <Person 1>
+#                 - <Person 2>
+#
+# To regenerate the HTML after editing: python3 build.py
+
+domains:
+  - name: Data Platform
+    areas:
+      - name: Recognition Team
+        microteams:
+          - name: recog-devops
+            tl: Giuseppe Badoni
+            pm: Matt
+            po: Diego
+            qa: Valentina
+            members:
+              - Francesco Vernì
+              - Gabriele Tupini
+          - name: catalog-ai
+            tl: Simone Bersani
+            pm: Matt
+            po: Diego
+            qa: Valentina
+            members:
+              - Simone Bersani
+              - Marco Baccini
+              - Alessandro Siciliano
+      - name: Enrichment Team
+        microteams:
+          - name: Enrichment Nexus
+            tl: Carlos Company Bernal
+            pm: Alessandro
+            ux: Ricardo
+            po: Eduardo Ayus
+            qa: Laila
+            members:
+              - Carlos Company Bernal
+          - name: Enrichment Flow
+            tl: Carlos Company Bernal
+            pm: Alessandro
+            ux: Ricardo
+            po: Eduardo Ayus
+            qa: Laila
+            members:
+              - Sergio Fernandez Lucas
+          - name: Enrichment Core
+            tl: Carlos Company Bernal
+            pm: Alessandro
+            ux: Ricardo
+            po: Eduardo Ayus
+            qa: Laila
+            members:
+              - Paco Garcia Urtiaga
+          - name: Enrichment Security
+            tl: Carlos Company Bernal
+            pm: Alessandro
+            ux: Ricardo
+            po: Eduardo Ayus
+            qa: Laila
+            members:
+              - Pablo Guijarro Ramirez
+          - name: Enrichment Quest
+            tl: Carlos Company Bernal
+            pm: Alessandro
+            ux: Ricardo
+            po: Eduardo Ayus
+            qa: Laila
+            members:
+              - Cristian Marin Segura
+      - name: Data Architecture Team
+        microteams:
+          - name: Cloud Ops
+            tl: Carlo Medas
+            po: Eduardo Ayus
+            members:
+              - Raul Fontecha Cabrero
+      - name: Engineering Team
+        microteams:
+          - name: Engineering Team
+            tl: Carlo Medas
+            members:
+              - Lorenzo Patané
+      - name: Scanning-Core Team
+        microteams:
+          - name: Scan Security
+            tl: Helios Vicente Beltran
+            pm: Maria
+            ux: Sazia
+            po: Melissa
+            qa: Raquel
+            members:
+              - Helios Vicente Beltran
+          - name: Discovery Engine
+            tl: Helios Vicente Beltran
+            pm: Maria
+            ux: Sazia
+            po: Melissa
+            qa: Raquel
+            members:
+              - Antonio Defez Ibañez
+          - name: Asset Reconciliation
+            tl: Helios Vicente Beltran
+            pm: Maria
+            ux: Sazia
+            po: Melissa
+            qa: Raquel
+            members:
+              - Joaquin Garcia Piñero
+          - name: Scan Reliability
+            tl: Helios Vicente Beltran
+            pm: Maria
+            ux: Sazia
+            po: Melissa
+            qa: Raquel
+            members:
+              - William Pereira do Carmo
+          - name: Reconciliation
+            tl: Giuseppe Badoni
+            pm: Maria
+            ux: Sazia
+            po: Melissa
+            qa: Valentina
+            members:
+              - Giuseppe Badoni
+              - Alessio Ottaviani
+          - name: Vulnerability
+            pm: Rose
+            ux: Sazia
+            po: Melissa
+            qa: Valentina
+            members:
+              - Giuliano Scassaioli
+      - name: Datacore Team
+        microteams:
+          - name: Vulnerability Intelligence
+            tl: Giuseppe Badoni
+            members:
+              - Giuliano Scassaioli
+      - name: Discovery Team
+        microteams:
+          - name: discovery-ot-core
+            tl: Carlo Medas
+            members:
+              - Filip Van Houtte
+          - name: discovery-ot
+            tl: Koen Desmedt
+            pm: Maria
+            ux: Sazia
+            po: Melissa
+            qa: Elena
+            members:
+              - Olivier De Neef
+              - Robby Sherpereel
+          - name: discovery-maintenance-classic
+            tl: Koen Desmedt
+            pm: Maria
+            ux: Sazia
+            po: Melissa
+            qa: Elena
+            members:
+              - Xandro Vermeulen
+              - Karel De Smet
+              - Jeroen Vermeir
+          - name: discovery-test-automation
+            tl: Koen Desmedt
+            pm: Maria
+            ux: Sazia
+            po: Melissa
+            qa: Elena
+            members:
+              - Pieter Schockaert
+              - Thomas Sweeck
+          - name: discovery-credentials
+            tl: Koen Desmedt
+            pm: Maria
+            ux: Sazia
+            po: Melissa
+            qa: Elena
+            members:
+              - Iris Van De Zandschulp
+              - Koen Plasmans
+          - name: discovery-arch
+            tl: Koen Desmedt
+            pm: Maria
+            ux: Sazia
+            po: Melissa
+            qa: Elena
+            members:
+              - Marco Van Hoorick
+          - name: discovery-ptsd
+            tl: Koen Desmedt
+            pm: Maria
+            ux: Sazia
+            po: Melissa
+            qa: Elena
+            members:
+              - Joran Van Craenenbroeck
+              - Burak Yalcin
+              - Mitch Van Daele
+          - name: discovery-maintenance-partnertech
+            tl: Koen Desmedt
+            pm: Matt
+            ux: Sazia
+            po: Melissa/Diego
+            qa: Elena
+            members:
+              - Edwin Bekaert
+              - Peter Van Dender
+          - name: discovery-.net10
+            tl: Koen Desmedt
+            pm: Maria
+            ux: Sazia
+            po: Melissa
+            qa: Elena
+            members:
+              - Nick Van Den Broeck
+          - name: discovery-maintenance-networkdiscovery
+            tl: Koen Desmedt
+            pm: Maria
+            ux: Sazia
+            po: Melissa
+            qa: Elena
+            members:
+              - Kenny Impens
+      - name: Redjack Data Platform Team
+        microteams:
+          - name: Redjack Data Platform Team
+            tl: Shelley Donaldson
+            po: Shelley Donaldson
+            members:
+              - Nathaniel Rupsis
+      - name: Data Science Team
+        microteams:
+          - name: hvmnd
+            tl: Renaud Marty
+            pm: Arnaud
+            ux: Dave
+            po: Eduardo
+            qa: Laila
+            members:
+              - Renaud
+              - Flavio De Benedictis
+              - Juan David Rodriguez Gomez
+              - Alessandro Manfredi
+      - name: RedJack Team
+        microteams:
+          - name: traffic-sensor
+            tl: Nate Rupsis
+            pm: Gilian
+            ux: Sazia
+            po: Shelley
+            members:
+              - Andrew Spoden
+              - Ben Kimock
+              - Gabriel Ferguson
+          - name: inventory-orch
+            tl: Nate Rupsis
+            pm: Gilian
+            ux: Sazia
+            po: Shelley
+            members:
+              - Danny Peck
+              - Mateusz Jan Kulesza
+          - name: rj-datascience
+            tl: Nate Rupsis
+            pm: Gilian
+            ux: Sazia
+            po: Shelley
+            members:
+              - David Pekarek
+              - Jordan Cason
+  - name: Eng Features
+    areas:
+      - name: Front-end Team
+        microteams:
+          - name: UI Platform
+            tl: Antonio Vizuete Sanchis
+            pm: Alessandro
+            ux: Ricardo
+            po: Adrian
+            qa: Alicia
+            members:
+              - Antonio Vizuete Sanchis
+              - Pablo Alcaraz Tarraga
+              - Miguel Angel Beltra Mayoral
+              - Eduardo Ivorra Salinas
+      - name: AI Team
+        microteams:
+          - name: Lens
+            tl: David Garcia Izquierdo
+            pm: Arnaud
+            ux: Dave
+            po: Selene
+            qa: Alicia
+            members:
+              - David Garcia Izquierdo
+          - name: MCP Auth
+            tl: David Garcia Izquierdo
+            pm: Arnaud
+            ux: Dave
+            po: Selene
+            qa: Alicia
+            members:
+              - Alberto Juan Busquiel
+          - name: Agent Platform
+            tl: David Garcia Izquierdo
+            pm: Arnaud
+            ux: Dave
+            po: Selene
+            qa: Alicia
+            members:
+              - Carlos Coves Prieto
+      - name: Integrations Team
+        microteams:
+          - name: API Security
+            tl: Diego Pacini
+            po: Diego
+            qa: Daniela
+            members:
+              - David Alfonso Garcia
+          - name: Marketplace Platform
+            tl: Diego Pacini
+            po: Diego
+            qa: Daniela
+            members:
+              - Guillermo Ghersi Perez
+          - name: Marketplace & Workflows
+            tl: Diego Pacini
+            po: Diego
+            qa: Daniela
+            members:
+              - German Gomez Bevia
+          - name: Integration Core
+            tl: Diego Pacini
+            po: Diego
+            qa: Daniela
+            members:
+              - Andres Norberto Marotta
+      - name: Analytics Team
+        microteams:
+          - name: Analytics & AI
+            tl: Juan Carlos Lloret Hernandez
+            pm: Fabiola
+            ux: Dave
+            po: Adrian
+            qa: Alicia
+            members:
+              - Juan Carlos Lloret Hernandez
+          - name: Data Platform
+            tl: Juan Carlos Lloret Hernandez
+            pm: Arnaud
+            ux: Dave
+            po: Adrian
+            qa: Alicia
+            members:
+              - Pedro Jose Calvo Garcia
+              - Gacel Ivorra Rodriguez
+          - name: Data Engine
+            tl: Juan Carlos Lloret Hernandez
+            pm: Arnaud
+            ux: Dave
+            po: Adrian
+            qa: Alicia
+            members:
+              - Daniel Moratalla Sanchez
+              - Soufyan Rhazili Raoui
+      - name: Foundations Team
+        microteams:
+          - name: Identity Platform
+            tl: Luis Vicente Sanchez Ponce
+            pm: Alessandro
+            ux: Dave
+            po: Eduardo Ayus
+            qa: Raquel
+            members:
+              - Luis Vicente Sanchez Ponce
+          - name: Security & Tenacy
+            tl: Luis Vicente Sanchez Ponce
+            pm: Alessandro
+            ux: Ricardo
+            po: Edu
+            qa: Raquel
+            members:
+              - Ivan Garcia Marco
+          - name: Auth & Onboarding
+            tl: Luis Vicente Sanchez Ponce
+            pm: Alessandro
+            ux: Ricardo
+            po: Edu
+            qa: Raquel
+            members:
+              - Julien Tardy
+          - name: Asset Platform
+            tl: Luis Vicente Sanchez Ponce
+            pm: Alessandro
+            ux: Ricardo
+            po: Edu
+            qa: Raquel
+            members:
+              - Sebastian Urraco
+      - name: Asset and Visualisation Team
+        microteams:
+          - name: Doc Builder & DataCore Sync
+            tl: Patrick Beaupérin
+            pm: Fabiola
+            ux: Connor
+            po: Patrick Beaupérin
+            qa: Hanna
+            members:
+              - Félix Bessette
+          - name: MSMP
+            tl: Patrick Beaupérin
+            pm: Fabiola
+            ux: Connor
+            po: Patrick Beaupérin
+            qa: Hanna
+            members:
+              - Raphael Hoareau
+          - name: Cloud Scanner & CDK
+            tl: Patrick Beaupérin
+            pm: Fabiola
+            ux: Connor
+            po: Patrick Beaupérin
+            qa: Hanna
+            members:
+              - William Jean Mireault
+              - Dong Hai Truong
+          - name: Inventory (USERS, M365)
+            tl: Patrick Beaupérin
+            pm: Fabiola
+            ux: Connor
+            po: Patrick Beaupérin
+            qa: Hanna
+            members:
+              - Gerson Naval
+          - name: Diagrams & Intune
+            tl: Patrick Beaupérin
+            pm: Fabiola
+            ux: Connor
+            po: Patrick Beaupérin
+            qa: Hanna
+            members:
+              - William Silburn
+          - name: AssetForge
+            tl: Patrick Beaupérin
+            pm: Fabiola
+            ux: Connor
+            po: Patrick Beaupérin
+            qa: Hanna
+            members:
+              - Renaud St-Pierre
+      - name: Datanauts Team
+        microteams:
+          - name: Platform Reliability
+            tl: Stefano Straus
+            po: Adrian
+            members:
+              - Ivan Perea Fuentes
+          - name: Data Lakehouse
+            tl: Stefano Straus
+            po: Adrian
+            members:
+              - Giuseppe Gessone
+          - name: Infrastructure Resilience
+            tl: Stefano Straus
+            po: Adrian
+            members:
+              - Rafael Perez Martinez
+          - name: Stream Processing
+            tl: Stefano Straus
+            po: Adrian
+            members:
+              - Roberto Serafin
+      - name: Westeros Team
+        microteams:
+          - name: Luzmo
+            tl: Stefano Straus
+            pm: Alessandro
+            ux: Ricardo
+            po: Adrian
+            members:
+              - James Robert Byrd
+          - name: Accesibility
+            tl: Stefano Straus
+            pm: Alessandro
+            ux: Ricardo
+            po: Adrian
+            members:
+              - Randy Collier
+      - name: Engineering Team
+        microteams:
+          - name: Engineering Team
+            tl: Stefano Straus
+            members:
+              - Federico Coletto
